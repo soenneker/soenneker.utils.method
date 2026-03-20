@@ -13,7 +13,7 @@ public static class MethodUtil
     /// </summary>
     /// <param name="methodName">Not intended to ever be set from caller</param>
     [Pure]
-    public static string? Get([CallerMemberName] string? methodName = null)
+    public static string Get([CallerMemberName] string methodName = "")
     {
         return methodName;
     }
