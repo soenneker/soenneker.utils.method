@@ -4,10 +4,22 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.utils.method/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.utils.method/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Utils.Method
-### A utility library providing various method() related operations
+A utility library providing various method() related operations.
 
 ## Installation
 
-```
+```bash
 dotnet add package Soenneker.Utils.Method
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Utils.Method;
+```
+
+Call the static `MethodUtil` methods directly; no dependency-injection registration is required.
+
+## Common operations
+
+- `Get()` - Gets the name of the current method (calling this).
