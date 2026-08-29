@@ -12,6 +12,7 @@ public static class MethodUtil
     /// Gets the name of the current method (calling this)
     /// </summary>
     /// <param name="methodName">Not intended to ever be set from caller</param>
+    /// <returns>The the name of the current method (calling this).</returns>
     [Pure]
     public static string Get([CallerMemberName] string methodName = "")
     {
