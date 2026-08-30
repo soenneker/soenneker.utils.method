@@ -9,10 +9,10 @@ namespace Soenneker.Utils.Method;
 public static class MethodUtil
 {
     /// <summary>
-    /// Gets the name of the current method (calling this)
+    /// Gets the compiler-supplied name of the member containing the call.
     /// </summary>
-    /// <param name="methodName">Not intended to ever be set from caller</param>
-    /// <returns>The the name of the current method (calling this).</returns>
+    /// <param name="methodName">The caller member name supplied by the compiler, or an explicit override.</param>
+    /// <returns>The containing member name or explicitly supplied value.</returns>
     [Pure]
     public static string Get([CallerMemberName] string methodName = "")
     {
